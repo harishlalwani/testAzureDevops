@@ -8,7 +8,7 @@ jobs:
     - name: Run script file
       env:
         AZUREPAT: ${{env.AzurePAT.AZUREPAT}}
-        AZUSERNAME: ${{env.AzurePAT.AZUSERNAME}}
+        AZUSERNAME: "ek";
       run: |
          chmod +x ./commit.sh
          ./commit.sh
