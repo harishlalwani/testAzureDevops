@@ -8,5 +8,7 @@ GIT_CMD_REPOSITORY="https://$AZUSERNAME:$API_TOKEN_GITHUB@dev.azure.com/$AZUSERN
 git clone $GIT_CMD_REPOSITORY
 
 mv -r ../testAzureDevops/* TestGitSync/
+
+cd TestGitSync
 git add .
 git push
