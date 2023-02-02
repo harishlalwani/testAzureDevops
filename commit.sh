@@ -13,4 +13,6 @@ cp -r testAzureDevops/* TestGitSync/
 
 cd TestGitSync
 git add .
+git commit -m "sync from git to azure"
+ls -lrth
 git push
