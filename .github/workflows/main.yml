@@ -9,7 +9,7 @@ jobs:
     - name: Run script file
       env:
         AZUREPAT: ${{secrets.AZUREPAT}}
-        AZUSERNAME: ${{secrets.AZUSERNAME}};
+        AZUSERNAME: ${{secrets.AZUSERNAME}}
       run: |
          chmod +x ./commit.sh
          ./commit.sh
