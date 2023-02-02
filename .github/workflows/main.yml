@@ -3,9 +3,7 @@ on: push
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
-    env:
-      AZUSERNAME: ${{ secrets.AzurePAT.AZUSERNAME }}
-      AZUREPAT: ${{ secrets.AzurePAT.AZUREPAT }}
+    environment: AzurePAT
     steps:
     - uses: actions/checkout@v2
     - name: Run script file
