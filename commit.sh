@@ -19,5 +19,5 @@ git config --global user.name "$AZUSERNAME"
 
 git add .
 git commit -m "sync from git to azure"
-ls -lrth
+
 git push
