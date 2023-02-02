@@ -3,11 +3,12 @@ on: push
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
-    environment:
-      name: AzurePAT
     steps:
     - uses: actions/checkout@v2
     - name: Run script file
+      env:
+        AZUREPAT: ${{env.AzurePAT.AZUREPAT}}
+        AZUSERNAME: ${{env.AzurePAT.AZUSERNAME}}
       run: |
          chmod +x ./commit.sh
          ./commit.sh
