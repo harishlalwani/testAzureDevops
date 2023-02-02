@@ -3,7 +3,7 @@ on: push
 jobs:
   check-bats-version:
     runs-on: ubuntu-latest
-    environment: production
+    environment: AzurePAT
     steps:
     - uses: actions/checkout@v2
     - name: Run script file
