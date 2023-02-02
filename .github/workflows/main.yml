@@ -4,8 +4,8 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     env:
-      AZUSERNAME: ${{ secrets.AZUSERNAME }}
-      AZUREPAT: ${{ secrets.AZUREPAT }}
+      AZUSERNAME: ${{ secrets.AzurePAT.AZUSERNAME }}
+      AZUREPAT: ${{ secrets.AzurePAT.AZUREPAT }}
     steps:
     - uses: actions/checkout@v2
     - name: Run script file
