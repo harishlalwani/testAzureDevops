@@ -1,8 +1,9 @@
 API_TOKEN_GITHUB=$AZUREPAT
 AZUSERNAME=$AZUSERNAME
-GIT_CMD_REPOSITORY="https://$AZUSERNAME:$API_TOKEN_GITHUB@dev.azure.com/$AZUSERNAME/TestGitSync/_git/TestGitSync"
-
+git clone https://github.com/harishlalwani/testAzureDevops
 rm -rf .git
-git clone $GIT_CMD_REPOSITORY
-git add .
-git push
+
+#GIT_CMD_REPOSITORY="https://$AZUSERNAME:$API_TOKEN_GITHUB@dev.azure.com/$AZUSERNAME/TestGitSync/_git/TestGitSync"
+#git clone $GIT_CMD_REPOSITORY
+#git add .
+#git push
