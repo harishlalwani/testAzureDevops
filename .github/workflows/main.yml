@@ -4,4 +4,9 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - run: commit.sh
+    - uses: actions/checkout@v2
+    - name: Run script file
+      run: |
+         chmod +x ./commit.sh
+         ./commit.sh
+      shell: bash
