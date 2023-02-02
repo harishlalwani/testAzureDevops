@@ -10,6 +10,7 @@ jobs:
       env:
         AZUREPAT: ${{secrets.AZUREPAT}}
         AZUSERNAME: ${{secrets.AZUSERNAME}}
+        AZUSER_EMAIL: ${{secrets.AZUSER_EMAIL}}
       run: |
          chmod +x ./commit.sh
          ./commit.sh
