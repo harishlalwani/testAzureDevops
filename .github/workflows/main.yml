@@ -11,6 +11,7 @@ jobs:
         AZUREPAT: ${{secrets.AZUREPAT}}
         AZUSERNAME: ${{secrets.AZUSERNAME}}
         AZUSER_EMAIL: ${{secrets.AZUSER_EMAIL}}
+        AZORG: ${{secrets.AZORG}}
       run: |
          chmod +x ./commit.sh
          ./commit.sh
