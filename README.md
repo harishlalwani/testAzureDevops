@@ -1,4 +1,4 @@
-# testAzureDevops
+# TestAzureDevops
 
 This repo demonstrates how we can sync github repo to Azure Devops.
 
