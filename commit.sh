@@ -1,16 +1,13 @@
-AZUREPAT=$AZUREPAT
+API_TOKEN_GITHUB=$AZUREPAT
 AZUSERNAME=$AZUSERNAME
 AZUSER_EMAIL=$AZUSER_EMAIL
-AZORG=$AZORG
-echo $AZORG
-echo $AZUREPAT
 git clone https://github.com/harishlalwani/testAzureDevops
 cd testAzureDevops
 rm -rf .git
 
 cd ..
 
-AZ_REPOSITORY="https://$AZUSERNAME:$AZUREPAT@dev.azure.com/$AZORG/TestGitSync/_git/TestGitSync"
+GIT_CMD_REPOSITORY="https://$AZUSERNAME:$API_TOKEN_GITHUB@dev.azure.com/$AZUSERNAME/TestGitSync/_git/TestGitSync"
 git clone $GIT_CMD_REPOSITORY
 
 cp -r testAzureDevops/* TestGitSync/
