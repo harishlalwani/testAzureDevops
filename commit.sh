@@ -2,6 +2,8 @@ AZUREPAT=$AZUREPAT
 AZUSERNAME=$AZUSERNAME
 AZUSER_EMAIL=$AZUSER_EMAIL
 AZORG=$AZORG
+echo $AZORG
+echo $AZUREPAT
 git clone https://github.com/harishlalwani/testAzureDevops
 cd testAzureDevops
 rm -rf .git
