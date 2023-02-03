@@ -8,7 +8,7 @@ rm -rf .git
 
 cd ..
 
-GIT_CMD_REPOSITORY="https://$AZUSERNAME:$AZUREPAT@dev.azure.com/$AZUSERNAME/TestGitSync/_git/TestGitSync"
+GIT_CMD_REPOSITORY="https://$AZUSERNAME:$AZUREPAT@dev.azure.com/$AZORG/TestGitSync/_git/TestGitSync"
 git clone $GIT_CMD_REPOSITORY
 
 cp -r testAzureDevops/* TestGitSync/
